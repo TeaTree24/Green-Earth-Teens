@@ -1,0 +1,263 @@
+/* Reset & Basics */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5fdf6;
+  color: #2e3d2f;
+  margin: 0;
+}
+
+/* Header */
+header {
+  background-color: #3c6e47;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #e1f3e8;
+  padding: 20px;
+}
+
+.hero img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+/* Intro Section */
+.intro {
+  padding: 30px;
+  background-color: #ffffff;
+}
+
+.simple-list {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.simple-list li {
+  margin-bottom: 8px;
+}
+
+/* Quote */
+.quote {
+  background-color: #d6eedc;
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #3c6e47;
+  color: white;
+}
+
+/* Nested and Simple Lists */
+.simple-list, .nested-list {
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+.simple-list li,
+.nested-list li {
+  margin-bottom: 8px;
+}
+
+.nested-list ul {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+/* Image + Caption */
+.about-image {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.about-image img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.caption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+/* Shared content wrapper */
+.content-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background-color: #ffffff;
+}
+
+/* Space between sections */
+.content-container section {
+  margin-bottom: 30px;
+}
+
+/* Event Table Styling */
+.event-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.event-table th,
+.event-table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+}
+
+.event-table th {
+  background-color: #e6f4e6;
+  font-weight: bold;
+}
+
+.event-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.gallery-grid figure {
+  margin: 0;
+  text-align: center;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.gallery-grid figcaption {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Styled Lists */
+.simple-list,
+.nested-list {
+  padding-left: 20px;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.simple-list li {
+  margin-bottom: 8px;
+}
+
+.nested-list > li {
+  margin-bottom: 12px;
+}
+
+.nested-list ul {
+  list-style-type: circle;
+  margin-left: 20px;
+  margin-top: 6px;
+}
+
+.nested-list li ul li {
+  margin-bottom: 6px;
+}
+
+/* Link Styling */
+a {
+  color: #267a3e; /* Darker green for links */
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #1e5e30; /* Even darker green on hover/focus for contrast */
+  text-decoration: underline;
+}
+
+/* Contact Form Styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: #2e8b57;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #256d46;
+}
+
+
